@@ -16,6 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
+        submodules: recursive
         persist-credentials: false
         fetch-depth: 0
 
