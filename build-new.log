@@ -1,0 +1,1039 @@
+# Ensure build layout
+# Check configuration tokens
+# Preparing build
+# Check requirements for android
+# Install platform
+# Run 'git config --get remote.origin.url' ...
+# Cwd /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android
+https://github.com/kivy/python-for-android.git
+# Run 'git branch -vv' ...
+# Cwd /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android
+* master 58d21141 [origin/master] Merge pull request #3321 from kivy/release-2026.05.09
+# Run '/data/data/com.termux/files/usr/bin/python3.14 -m pip install -q --user appdirs colorama>=0.3.3 jinja2 sh>=2, <3.0; sys_platform!="win32" meson ninja build toml packaging setuptools wheel~=0.43.0' ...
+# Cwd None
+# Apache ANT found at /data/data/com.termux/files/home/.buildozer/android/platform/apache-ant-1.9.4
+# Android SDK found at /data/data/com.termux/files/home/.buildozer/android/platform/android-sdk
+# Recommended android's NDK version by p4a is: 28c
+# Android NDK found at /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c
+# Run '/data/data/com.termux/files/usr/bin/python3.14 -m pythonforandroid.toolchain aab -h --color=always --storage-dir=/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a --ndk-api=24 --ignore-setup-py --debug' ...
+# Cwd /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android
+# Check application requirements
+# Compile platform
+# Run '/data/data/com.termux/files/usr/bin/python3.14 -m pythonforandroid.toolchain create --dist_name=myapp --bootstrap=sdl2 --requirements=python3,kivy --arch=arm64-v8a --arch=armeabi-v7a --copy-libs --color=always --storage-dir=/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a --ndk-api=24 --ignore-setup-py --debug' ...
+# Cwd /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android
+[WARNING]: prerequisites.py is experimental and does not support all prerequisites yet.
+[WARNING]: Please report any issues to the python-for-android issue tracker.
+[WARNING]: prerequisites.py is experimental and does not support all prerequisites yet.
+[WARNING]: Please report any issues to the python-for-android issue tracker.
+[1m[INFO][0m:    Will compile for the following archs: arm64-v8a, armeabi-v7a
+[1m[INFO][0m:    Found Android API target in $ANDROIDAPI: 33
+[1m[INFO][0m:    Available Android APIs are (33)
+[1m[INFO][0m:    Requested API target 33 is available, continuing.
+[1m[INFO][0m:    Found NDK dir in $ANDROIDNDK: /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c
+[1m[INFO][0m:    Found NDK version 28c
+[1m[31m[WARNING][39m[0m: Maximum recommended NDK version is 28c, but newer versions may work.
+[1m[31m[WARNING][39m[0m: Newer NDKs may not be fully supported by p4a.
+[1m[INFO][0m:    Getting NDK API version (i.e. minimum supported API) from user argument
+[1m[INFO][0m:    ccache is missing, the build will not be optimized in the future.
+[1m[90m[DEBUG][39m[0m:   All possible dists: []
+[1m[90m[DEBUG][39m[0m:   Dist matching name and arch: []
+[1m[90m[DEBUG][39m[0m:   Dist matching ndk_api and recipe: []
+[1m[INFO][0m:    No existing dists meet the given requirements!
+[1m[90m[DEBUG][39m[0m:   Remove directory and subdirectory /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp
+[1m[INFO][0m:    [1m[94mNo dist exists that meets your requirements, so one will be built.[0m
+[1m[INFO][0m:    Found a single valid recipe set: ['hostpython3', 'libffi', 'openssl', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'six', 'sqlite3', 'python3', 'sdl2', 'pyjnius', 'setuptools', 'android', 'kivy']
+[1m[INFO][0m:    The selected bootstrap is sdl2
+[1m[INFO][0m:    [1m[32m# Creating dist with sdl2 bootstrap[0m[39m
+[1m[INFO][0m:    [1m[94mDist will have name myapp and requirements (python3, kivy)[0m
+[1m[INFO][0m:    Dist contains the following requirements as recipes: ['hostpython3', 'libffi', 'openssl', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'pyjnius', 'setuptools', 'android', 'kivy']
+[1m[INFO][0m:    Dist will also contain modules (requests, filetype, six, idna, certifi, urllib3, chardet) installed from pip
+[1m[INFO][0m:    Dist will be build in mode debug
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/bootstrap_builds/sdl2[39m
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[90m[DEBUG][39m[0m:   Create directory /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp
+[1m[INFO][0m:    [1m[94mRecipe build order is ['hostpython3', 'libffi', 'openssl', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'pyjnius', 'setuptools', 'android', 'kivy'][0m
+[1m[INFO][0m:    [1m[94mThe requirements (certifi, chardet, filetype, idna, requests, six, urllib3) were not found as recipes, they will be installed with pip.[0m
+[1m[INFO][0m:    [1m[32m# Downloading recipes [0m[39m
+[1m[INFO][0m:    [1m[32mDownloading hostpython3[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/hostpython3[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/python/cpython/archive/refs/tags/v3.14.2.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	v3.14.2.tar.gz
+[1m[INFO][0m:    hostpython3 download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading libffi[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/libffi[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libffi/libffi/archive/v3.4.2.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	v3.4.2.tar.gz
+[1m[INFO][0m:    libffi download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading openssl[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/openssl[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://www.openssl.org/source/openssl-3.3.1.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	openssl-3.3.1.tar.gz
+[1m[INFO][0m:    openssl download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading sdl2_image[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/sdl2_image[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libsdl-org/SDL_image/releases/download/release-2.8.2/SDL2_image-2.8.2.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	SDL2_image-2.8.2.tar.gz
+[1m[INFO][0m:    sdl2_image download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading sdl2_mixer[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/sdl2_mixer[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libsdl-org/SDL_mixer/releases/download/release-2.6.3/SDL2_mixer-2.6.3.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	SDL2_mixer-2.6.3.tar.gz
+[1m[INFO][0m:    sdl2_mixer download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading sdl2_ttf[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/sdl2_ttf[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.22.0/SDL2_ttf-2.22.0.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	SDL2_ttf-2.22.0.tar.gz
+[1m[INFO][0m:    sdl2_ttf download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading sqlite3[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/sqlite3[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/sqlite/sqlite/archive/refs/tags/version-3.50.4.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	version-3.50.4.tar.gz
+[1m[INFO][0m:    sqlite3 download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading python3[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/python3[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/python/cpython/archive/refs/tags/v3.14.2.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	v3.14.2.tar.gz
+[1m[INFO][0m:    python3 download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading sdl2[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/sdl2[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libsdl-org/SDL/releases/download/release-2.30.11/SDL2-2.30.11.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	SDL2-2.30.11.tar.gz
+[1m[INFO][0m:    sdl2 download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading pyjnius[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/pyjnius[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/kivy/pyjnius/archive/1.7.0.zip[0m
+[1m[90m[DEBUG][39m[0m:   	1.7.0.zip
+[1m[INFO][0m:    pyjnius download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mDownloading setuptools[0m[39m
+[1m[INFO][0m:    Skipping setuptools download as no URL is set
+[1m[INFO][0m:    [1m[32mDownloading android[0m[39m
+[1m[INFO][0m:    Skipping android download as no URL is set
+[1m[INFO][0m:    [1m[32mDownloading kivy[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/kivy[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/kivy/kivy/archive/2.3.1.zip[0m
+[1m[90m[DEBUG][39m[0m:   	2.3.1.zip
+[1m[INFO][0m:    kivy download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32m# Building all recipes for arch arm64-v8a[0m[39m
+[1m[INFO][0m:    [1m[32m# Unpacking recipes[0m[39m
+[1m[INFO][0m:    [1m[32mUnpacking hostpython3 for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/python/cpython/archive/refs/tags/v3.14.2.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	v3.14.2.tar.gz
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop[39m
+[1m[INFO][0m:    hostpython3 is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[90m[DEBUG][39m[0m:   Create directory /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_24
+[1m[INFO][0m:    [1m[32mUnpacking libffi for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libffi/libffi/archive/v3.4.2.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	v3.4.2.tar.gz
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_24[39m
+[1m[90m[DEBUG][39m[0m:   Moving libffi-3.4.2 to /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_24/libffi
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mUnpacking openssl for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://www.openssl.org/source/openssl-3.3.1.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	openssl-3.3.1.tar.gz
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24[39m
+[1m[INFO][0m:    openssl is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mUnpacking sdl2_image for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libsdl-org/SDL_image/releases/download/release-2.8.2/SDL2_image-2.8.2.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	SDL2_image-2.8.2.tar.gz
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/bootstrap_builds/sdl2/jni[39m
+[1m[INFO][0m:    sdl2_image is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mUnpacking sdl2_mixer for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libsdl-org/SDL_mixer/releases/download/release-2.6.3/SDL2_mixer-2.6.3.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	SDL2_mixer-2.6.3.tar.gz
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/bootstrap_builds/sdl2/jni[39m
+[1m[INFO][0m:    sdl2_mixer is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mUnpacking sdl2_ttf for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.22.0/SDL2_ttf-2.22.0.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	SDL2_ttf-2.22.0.tar.gz
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/bootstrap_builds/sdl2/jni[39m
+[1m[INFO][0m:    sdl2_ttf is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mUnpacking sqlite3 for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/sqlite/sqlite/archive/refs/tags/version-3.50.4.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	version-3.50.4.tar.gz
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_24[39m
+[1m[INFO][0m:    sqlite3 is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mUnpacking python3 for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/python/cpython/archive/refs/tags/v3.14.2.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	v3.14.2.tar.gz
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24[39m
+[1m[INFO][0m:    python3 is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mUnpacking sdl2 for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/libsdl-org/SDL/releases/download/release-2.30.11/SDL2-2.30.11.tar.gz[0m
+[1m[90m[DEBUG][39m[0m:   	SDL2-2.30.11.tar.gz
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/bootstrap_builds/sdl2/jni[39m
+[1m[INFO][0m:    sdl2 is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mUnpacking pyjnius for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/kivy/pyjnius/archive/1.7.0.zip[0m
+[1m[90m[DEBUG][39m[0m:   	1.7.0.zip
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/pyjnius-sdl2/arm64-v8a__ndk_target_24[39m
+[1m[INFO][0m:    pyjnius is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mUnpacking setuptools for arm64-v8a[0m[39m
+[1m[INFO][0m:    Skipping setuptools unpack as no URL is set
+[1m[90m[DEBUG][39m[0m:   Remove directory and subdirectory /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/android-sdl2/arm64-v8a__ndk_target_24/android
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running cp -a /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/recipes/android/src /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/android-sdl2/arm64-v8a__ndk_target_24/android[0m
+[1m[INFO][0m:    [1m[32mUnpacking kivy for arm64-v8a[0m[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running basename https://github.com/kivy/kivy/archive/2.3.1.zip[0m
+[1m[90m[DEBUG][39m[0m:   	2.3.1.zip
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/kivy-sdl2/arm64-v8a__ndk_target_24[39m
+[1m[INFO][0m:    kivy is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32m# Prebuilding recipes[0m[39m
+[1m[INFO][0m:    python3 has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mPrebuilding hostpython3 for arm64-v8a[0m[39m
+[1m[INFO][0m:    hostpython3 has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for hostpython3[arm64-v8a][0m[39m
+[1m[INFO][0m:    [1m[32mhostpython3 already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding libffi for arm64-v8a[0m[39m
+[1m[INFO][0m:    libffi has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for libffi[arm64-v8a][0m[39m
+[1m[INFO][0m:    Applying patch remove-version-info.patch
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running patch -t -d /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_24/libffi -p1 -i /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/recipes/libffi/remove-version-info.patch[0m
+[1m[90m[DEBUG][39m[0m:   	patching file Makefile.am
+[1m[90m[DEBUG][39m[0m:   	Hunk #1 succeeded at 138 with fuzz 2 (offset -18 lines).
+[1m[INFO][0m:    [1m[32mPrebuilding openssl for arm64-v8a[0m[39m
+[1m[INFO][0m:    openssl has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mPrebuilding sdl2_image for arm64-v8a[0m[39m
+[1m[INFO][0m:    sdl2_image has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for sdl2_image[arm64-v8a][0m[39m
+[1m[INFO][0m:    [1m[32msdl2_image already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding sdl2_mixer for arm64-v8a[0m[39m
+[1m[INFO][0m:    sdl2_mixer has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mPrebuilding sdl2_ttf for arm64-v8a[0m[39m
+[1m[INFO][0m:    sdl2_ttf has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mPrebuilding sqlite3 for arm64-v8a[0m[39m
+[1m[INFO][0m:    sqlite3 has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mPrebuilding python3 for arm64-v8a[0m[39m
+[1m[INFO][0m:    python3 has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for python3[arm64-v8a][0m[39m
+[1m[INFO][0m:    [1m[32mpython3 already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding sdl2 for arm64-v8a[0m[39m
+[1m[INFO][0m:    sdl2 has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mPrebuilding pyjnius for arm64-v8a[0m[39m
+[1m[INFO][0m:    pyjnius has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for pyjnius[arm64-v8a][0m[39m
+[1m[INFO][0m:    [1m[32mpyjnius already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding setuptools for arm64-v8a[0m[39m
+[1m[INFO][0m:    setuptools has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mPrebuilding android for arm64-v8a[0m[39m
+[1m[INFO][0m:    android has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/android-sdl2/arm64-v8a__ndk_target_24/android[39m
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[INFO][0m:    [1m[32mPrebuilding kivy for arm64-v8a[0m[39m
+[1m[INFO][0m:    kivy has no prebuild_arm64_v8a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for kivy[arm64-v8a][0m[39m
+[1m[INFO][0m:    [1m[32mkivy already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32m# Building recipes[0m[39m
+[1m[INFO][0m:    [1m[32mBuilding hostpython3 for arm64-v8a[0m[39m
+[1m[INFO][0m:    hostpython3 said it is already built, skipping
+[1m[INFO][0m:    [1m[32mBuilding libffi for arm64-v8a[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_24/libffi[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running autogen.sh[0m
+[1m[90m[DEBUG][39m[0m:   	autoreconf: export WARNINGS=
+[1m[90m[DEBUG][39m[0m:   	autoreconf: Entering directory '.'
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: no obvious need to run autopoint
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: aclocal -I m4
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: tracing
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: libtoolize --copy
+[1m[90m[DEBUG][39m[0m:   	libtoolize: putting auxiliary files in '.'.
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file './ltmain.sh'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/libtool.m4'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/ltoptions.m4'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/ltsugar.m4'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/ltversion.m4'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/lt~obsolete.m4'
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: not using Intltool
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: not using Gtkdoc
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: no need to run autopoint (confirmed)
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: aclocal -I m4
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: /data/data/com.termux/files/usr/bin/autoconf
+[1m[90m[DEBUG][39m[0m:   	configure.ac:8: warning: The macro 'AC_CANONICAL_SYSTEM' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:8: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2137: AC_CANONICAL_SYSTEM is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:8: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:41: warning: The macro 'AC_PROG_LIBTOOL' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:41: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	m4/libtool.m4:100: AC_PROG_LIBTOOL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:41: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:74: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:74: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2903: AC_TRY_COMPILE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:3: AC_FUNC_MMAP_BLACKLIST is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:74: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:91: warning: The macro 'AC_HEADER_STDC' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:91: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/headers.m4:664: AC_HEADER_STDC is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:91: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:118: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:118: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2903: AC_TRY_COMPILE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	m4/asmcfi.m4:1: GCC_AS_CFI_PSEUDO_OP is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:118: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:122: warning: The macro 'AC_TRY_LINK' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:122: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2976: AC_TRY_LINK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:122: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:138: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:138: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2903: AC_TRY_COMPILE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:138: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:185: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:185: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2903: AC_TRY_COMPILE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:185: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:310: warning: The macro 'AC_HELP_STRING' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:310: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:205: AC_HELP_STRING is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:310: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: warning: The macro 'AC_HELP_STRING' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:205: AC_HELP_STRING is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: warning: The macro 'AC_PROG_LD' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	m4/libtool.m4:3587: AC_PROG_LD is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:251: LIBFFI_CHECK_LINKER_FEATURES is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: warning: The macro 'AC_TRY_RUN' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:3053: AC_TRY_RUN is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:251: LIBFFI_CHECK_LINKER_FEATURES is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: warning: The macro 'AC_TRY_LINK' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2976: AC_TRY_LINK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: the top level
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: /data/data/com.termux/files/usr/bin/autoheader
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: automake --add-missing --copy --no-force
+[1m[90m[DEBUG][39m[0m:   	configure.ac:31: installing './compile'
+[1m[90m[DEBUG][39m[0m:   	configure.ac:19: installing './install-sh'
+[1m[90m[DEBUG][39m[0m:   	configure.ac:19: installing './missing'
+[1m[90m[DEBUG][39m[0m:   	Makefile.am: installing './depcomp'
+[1m[90m[DEBUG][39m[0m:   	doc/Makefile.am:3: installing 'doc/mdate-sh'
+[1m[90m[DEBUG][39m[0m:   	doc/Makefile.am:3: installing 'doc/texinfo.tex'
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: not running make: --make not given
+[1m[90m[DEBUG][39m[0m:   	autoreconf: Leaving directory '.'
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running autoreconf -vif[0m
+[1m[90m[DEBUG][39m[0m:   	autoreconf: export WARNINGS=
+[1m[90m[DEBUG][39m[0m:   	autoreconf: Entering directory '.'
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: no obvious need to run autopoint
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: aclocal --force -I m4
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: tracing
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: libtoolize --copy --force
+[1m[90m[DEBUG][39m[0m:   	libtoolize: putting auxiliary files in '.'.
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file './ltmain.sh'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/libtool.m4'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/ltoptions.m4'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/ltsugar.m4'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/ltversion.m4'
+[1m[90m[DEBUG][39m[0m:   	libtoolize: copying file 'm4/lt~obsolete.m4'
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: not using Intltool
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: not using Gtkdoc
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: no need to run autopoint (confirmed)
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: aclocal --force -I m4
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: /data/data/com.termux/files/usr/bin/autoconf --force
+[1m[90m[DEBUG][39m[0m:   	configure.ac:8: warning: The macro 'AC_CANONICAL_SYSTEM' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:8: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2137: AC_CANONICAL_SYSTEM is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:8: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:41: warning: The macro 'AC_PROG_LIBTOOL' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:41: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	m4/libtool.m4:100: AC_PROG_LIBTOOL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:41: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:74: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:74: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2903: AC_TRY_COMPILE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:3: AC_FUNC_MMAP_BLACKLIST is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:74: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:91: warning: The macro 'AC_HEADER_STDC' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:91: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/headers.m4:664: AC_HEADER_STDC is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:91: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:118: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:118: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2903: AC_TRY_COMPILE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	m4/asmcfi.m4:1: GCC_AS_CFI_PSEUDO_OP is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:118: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:122: warning: The macro 'AC_TRY_LINK' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:122: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2976: AC_TRY_LINK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:122: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:138: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:138: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2903: AC_TRY_COMPILE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:138: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:185: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:185: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2903: AC_TRY_COMPILE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:185: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:310: warning: The macro 'AC_HELP_STRING' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:310: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:205: AC_HELP_STRING is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:310: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: warning: The macro 'AC_HELP_STRING' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:205: AC_HELP_STRING is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: warning: The macro 'AC_PROG_LD' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	m4/libtool.m4:3587: AC_PROG_LD is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:251: LIBFFI_CHECK_LINKER_FEATURES is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: warning: The macro 'AC_TRY_RUN' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:3053: AC_TRY_RUN is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:251: LIBFFI_CHECK_LINKER_FEATURES is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: the top level
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: warning: The macro 'AC_TRY_LINK' is obsolete.
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: You should run autoupdate.
+[1m[90m[DEBUG][39m[0m:   	/home/builder/.termux-build/autoconf/src/lib/autoconf/general.m4:2976: AC_TRY_LINK is expanded from...
+[1m[90m[DEBUG][39m[0m:   	acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+[1m[90m[DEBUG][39m[0m:   	configure.ac:418: the top level
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: /data/data/com.termux/files/usr/bin/autoheader --force
+[1m[90m[DEBUG][39m[0m:   	autoreconf: running: automake --add-missing --copy --force-missing
+[1m[90m[DEBUG][39m[0m:   	configure.ac:31: installing './compile'
+[1m[90m[DEBUG][39m[0m:   	configure.ac:19: installing './missing'
+[1m[90m[DEBUG][39m[0m:   	Makefile.am: installing './depcomp'
+[1m[90m[DEBUG][39m[0m:   	autoreconf: './config.sub' is updated
+[1m[90m[DEBUG][39m[0m:   	autoreconf: './config.guess' is updated
+[1m[90m[DEBUG][39m[0m:   	autoreconf: configure.ac: not running make: --make not given
+[1m[90m[DEBUG][39m[0m:   	autoreconf: Leaving directory '.'
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running sh ./configure --build=aarch64-unknown-linux-android --host=aarch64-linux-android --prefix=/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_24/libffi --disable-builddir --enable-shared[0m
+[1m[90m[DEBUG][39m[0m:   	checking build system type... aarch64-unknown-linux-android
+[1m[90m[DEBUG][39m[0m:   	checking host system type... aarch64-unknown-linux-android
+[1m[90m[DEBUG][39m[0m:   	checking target system type... aarch64-unknown-linux-android
+[1m[90m[DEBUG][39m[0m:   	checking for gsed... sed
+[1m[90m[DEBUG][39m[0m:   	checking for a BSD-compatible install... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/install -c
+[1m[90m[DEBUG][39m[0m:   	checking whether sleep supports fractional seconds... yes
+[1m[90m[DEBUG][39m[0m:   	checking filesystem timestamp resolution... 0.01
+[1m[90m[DEBUG][39m[0m:   	checking whether build environment is sane... yes
+[1m[90m[DEBUG][39m[0m:   	checking for aarch64-linux-android-strip... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/llvm-strip --strip-unneeded
+[1m[90m[DEBUG][39m[0m:   	checking for a race-free mkdir -p... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/mkdir -p
+[1m[90m[DEBUG][39m[0m:   	checking for gawk... gawk
+[1m[90m[DEBUG][39m[0m:   	checking whether make -j8 sets $(MAKE)... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether make -j8 supports nested variables... yes
+[1m[90m[DEBUG][39m[0m:   	checking xargs -n works... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether UID '10500' is supported by ustar format... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether GID '10500' is supported by ustar format... yes
+[1m[90m[DEBUG][39m[0m:   	checking how to create a ustar tar archive... gnutar
+[1m[90m[DEBUG][39m[0m:   	checking for aarch64-linux-android-gcc... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC
+[1m[90m[DEBUG][39m[0m:   	checking whether the C compiler works... yes
+[1m[90m[DEBUG][39m[0m:   	checking for C compiler default output file name... a.out
+[1m[90m[DEBUG][39m[0m:   	checking for suffix of executables...
+[1m[90m[DEBUG][39m[0m:   	checking whether we are cross compiling... yes
+[1m[90m[DEBUG][39m[0m:   	checking for suffix of object files... o
+[1m[90m[DEBUG][39m[0m:   	checking whether the compiler supports GNU C... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC accepts -g... yes
+[1m[90m[DEBUG][39m[0m:   	checking for /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC option to enable C23 features... -std=gnu23
+[1m[90m[DEBUG][39m[0m:   	checking whether /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 understands -c and -o together... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether make -j8 supports the include directive... yes (GNU style)
+[1m[90m[DEBUG][39m[0m:   	checking dependency style of /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23... gcc3
+[1m[90m[DEBUG][39m[0m:   	checking whether the compiler supports GNU C++... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC accepts -g... yes
+[1m[90m[DEBUG][39m[0m:   	checking dependency style of /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC... gcc3
+[1m[90m[DEBUG][39m[0m:   	checking dependency style of /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23... gcc3
+[1m[90m[DEBUG][39m[0m:   	checking how to print strings... printf
+[1m[90m[DEBUG][39m[0m:   	checking for a sed that does not truncate output... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/sed
+[1m[90m[DEBUG][39m[0m:   	checking for grep that handles long lines and -e... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/grep
+[1m[90m[DEBUG][39m[0m:   	checking for egrep... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/grep -E
+[1m[90m[DEBUG][39m[0m:   	checking for fgrep... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/grep -F
+[1m[90m[DEBUG][39m[0m:   	checking for ld used by /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23... /data/data/com.termux/files/usr/bin/ld
+[1m[90m[DEBUG][39m[0m:   	checking if the linker (/data/data/com.termux/files/usr/bin/ld) is GNU ld... yes
+[1m[90m[DEBUG][39m[0m:   	checking for BSD- or MS-compatible name lister (nm)... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/aarch64-linux-android-nm -B
+[1m[90m[DEBUG][39m[0m:   	checking the name lister (/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/aarch64-linux-android-nm -B) interface... BSD nm
+[1m[90m[DEBUG][39m[0m:   	checking whether ln -s works... yes
+[1m[90m[DEBUG][39m[0m:   	checking the maximum length of command line arguments... 32768
+[1m[90m[DEBUG][39m[0m:   	checking how to convert aarch64-unknown-linux-android file names to aarch64-unknown-linux-android format... func_convert_file_noop
+[1m[90m[DEBUG][39m[0m:   	checking how to convert aarch64-unknown-linux-android file names to toolchain format... func_convert_file_noop
+[1m[90m[DEBUG][39m[0m:   	checking for /data/data/com.termux/files/usr/bin/ld option to reload object files... -r
+[1m[90m[DEBUG][39m[0m:   	checking for file... file
+[1m[90m[DEBUG][39m[0m:   	checking for aarch64-linux-android-objdump... aarch64-linux-android-objdump
+[1m[90m[DEBUG][39m[0m:   	checking how to recognize dependent libraries... pass_all
+[1m[90m[DEBUG][39m[0m:   	checking for aarch64-linux-android-dlltool... no
+[1m[90m[DEBUG][39m[0m:   	checking for dlltool... dlltool
+[1m[90m[DEBUG][39m[0m:   	configure: WARNING: using cross tools not prefixed with host triplet
+[1m[90m[DEBUG][39m[0m:   	checking how to associate runtime and link libraries... printf %s\n
+[1m[90m[DEBUG][39m[0m:   	checking for aarch64-linux-android-ranlib... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/llvm-ranlib
+[1m[90m[DEBUG][39m[0m:   	checking for aarch64-linux-android-ar... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/llvm-ar
+[1m[90m[DEBUG][39m[0m:   	checking for archiver @FILE support... @
+[1m[90m[DEBUG][39m[0m:   	checking for aarch64-linux-android-strip... (cached) /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/llvm-strip --strip-unneeded
+[1m[90m[DEBUG][39m[0m:   	checking command to parse /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/aarch64-linux-android-nm -B output from /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 object... ok
+[1m[90m[DEBUG][39m[0m:   	checking for sysroot... no
+[1m[90m[DEBUG][39m[0m:   	checking for a working dd... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/dd
+[1m[90m[DEBUG][39m[0m:   	checking how to truncate binary pipes... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/dd bs=4096 count=1
+[1m[90m[DEBUG][39m[0m:   	checking for aarch64-linux-android-mt... no
+[1m[90m[DEBUG][39m[0m:   	checking for mt... no
+[1m[90m[DEBUG][39m[0m:   	checking if : is a manifest tool... no
+[1m[90m[DEBUG][39m[0m:   	checking for stdio.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for stdlib.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for string.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for inttypes.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for stdint.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for strings.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for sys/stat.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for sys/types.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for unistd.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for dlfcn.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking which variant of shared library versioning to provide... (default) aix
+[1m[90m[DEBUG][39m[0m:   	checking for objdir... .libs
+[1m[90m[DEBUG][39m[0m:   	checking if /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 supports -fno-rtti -fno-exceptions... yes
+[1m[90m[DEBUG][39m[0m:   	checking for /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 option to produce PIC... -fPIC -DPIC
+[1m[90m[DEBUG][39m[0m:   	checking if /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 PIC flag -fPIC -DPIC works... yes
+[1m[90m[DEBUG][39m[0m:   	checking if /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 static flag -static works... no
+[1m[90m[DEBUG][39m[0m:   	checking if /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 supports -c -o file.o... yes
+[1m[90m[DEBUG][39m[0m:   	checking if /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 supports -c -o file.o... (cached) yes
+[1m[90m[DEBUG][39m[0m:   	checking whether the /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 linker (/data/data/com.termux/files/usr/bin/ld) supports shared libraries... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether -lc should be explicitly linked in... no
+[1m[90m[DEBUG][39m[0m:   	checking dynamic linker characteristics... Android linker
+[1m[90m[DEBUG][39m[0m:   	checking how to hardcode library paths into programs... immediate
+[1m[90m[DEBUG][39m[0m:   	checking whether stripping libraries is possible... yes
+[1m[90m[DEBUG][39m[0m:   	checking if libtool supports shared libraries... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether to build shared libraries... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether to build static libraries... yes
+[1m[90m[DEBUG][39m[0m:   	checking how to run the C++ preprocessor... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -E
+[1m[90m[DEBUG][39m[0m:   	checking for ld used by /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC... /data/data/com.termux/files/usr/bin/ld
+[1m[90m[DEBUG][39m[0m:   	checking if the linker (/data/data/com.termux/files/usr/bin/ld) is GNU ld... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether the /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC linker (/data/data/com.termux/files/usr/bin/ld) supports shared libraries... yes
+[1m[90m[DEBUG][39m[0m:   	checking for /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC option to produce PIC... -fPIC -DPIC
+[1m[90m[DEBUG][39m[0m:   	checking if /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC PIC flag -fPIC -DPIC works... yes
+[1m[90m[DEBUG][39m[0m:   	checking if /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC static flag -static works... no
+[1m[90m[DEBUG][39m[0m:   	checking if /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC supports -c -o file.o... yes
+[1m[90m[DEBUG][39m[0m:   	checking if /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC supports -c -o file.o... (cached) yes
+[1m[90m[DEBUG][39m[0m:   	checking whether the /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC linker (/data/data/com.termux/files/usr/bin/ld) supports shared libraries... yes
+[1m[90m[DEBUG][39m[0m:   	checking dynamic linker characteristics... Android linker
+[1m[90m[DEBUG][39m[0m:   	checking how to hardcode library paths into programs... immediate
+[1m[90m[DEBUG][39m[0m:   	checking for aarch64-linux-android-readelf... /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/llvm-readelf
+[1m[90m[DEBUG][39m[0m:   	checking size of size_t... 8
+[1m[90m[DEBUG][39m[0m:   	checking for C compiler vendor... clang
+[1m[90m[DEBUG][39m[0m:   	checking whether C compiler accepts -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC... yes
+[1m[90m[DEBUG][39m[0m:   	checking CFLAGS for maximum warnings... -Wall
+[1m[90m[DEBUG][39m[0m:   	checking whether to enable maintainer-specific portions of Makefiles... no
+[1m[90m[DEBUG][39m[0m:   	checking for sys/memfd.h... (cached) no
+[1m[90m[DEBUG][39m[0m:   	checking for memfd_create... (cached) no
+[1m[90m[DEBUG][39m[0m:   	checking for sys/mman.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for mmap... yes
+[1m[90m[DEBUG][39m[0m:   	checking for mkostemp... yes
+[1m[90m[DEBUG][39m[0m:   	checking for mkstemp... yes
+[1m[90m[DEBUG][39m[0m:   	checking for sys/mman.h... (cached) yes
+[1m[90m[DEBUG][39m[0m:   	checking for mmap... (cached) yes
+[1m[90m[DEBUG][39m[0m:   	checking whether read-only mmap of a plain file works... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether mmap from /dev/zero works... yes
+[1m[90m[DEBUG][39m[0m:   	checking for MAP_ANON(YMOUS)... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether mmap with MAP_ANON(YMOUS) works... yes
+[1m[90m[DEBUG][39m[0m:   	checking for egrep... (cached) /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/grep -E
+[1m[90m[DEBUG][39m[0m:   	checking for memcpy... yes
+[1m[90m[DEBUG][39m[0m:   	checking for size_t... yes
+[1m[90m[DEBUG][39m[0m:   	checking for working alloca.h... yes
+[1m[90m[DEBUG][39m[0m:   	checking for alloca... yes
+[1m[90m[DEBUG][39m[0m:   	checking size of double... 8
+[1m[90m[DEBUG][39m[0m:   	checking size of long double... 16
+[1m[90m[DEBUG][39m[0m:   	checking whether byte ordering is bigendian... no
+[1m[90m[DEBUG][39m[0m:   	checking assembler .cfi pseudo-op support... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether compiler supports pointer authentication... no
+[1m[90m[DEBUG][39m[0m:   	checking for _ prefix in compiled symbols... no
+[1m[90m[DEBUG][39m[0m:   	checking whether C compiler accepts -fno-lto... yes
+[1m[90m[DEBUG][39m[0m:   	checking whether .eh_frame section should be read-only... yes
+[1m[90m[DEBUG][39m[0m:   	checking for __attribute__((visibility("hidden")))... egrep: warning: egrep is obsolescent; using grep -E
+[1m[90m[DEBUG][39m[0m:   	yes
+[1m[90m[DEBUG][39m[0m:   	clang: error: unsupported option '-print-multi-os-directory'
+[1m[90m[DEBUG][39m[0m:   	clang: error: no input files
+[1m[90m[DEBUG][39m[0m:   	checking for ld used by /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23... (cached) /data/data/com.termux/files/usr/bin/ld
+[1m[90m[DEBUG][39m[0m:   	checking if the linker (/data/data/com.termux/files/usr/bin/ld) is GNU ld... (cached) yes
+[1m[90m[DEBUG][39m[0m:   	checking for shared libgcc... no
+[1m[90m[DEBUG][39m[0m:   	configure: versioning on shared library symbols is gnu
+[1m[90m[DEBUG][39m[0m:   	checking that generated files are newer than configure... done
+[1m[90m[DEBUG][39m[0m:   	configure: creating ./config.status
+[1m[90m[DEBUG][39m[0m:   	config.status: creating include/Makefile
+[1m[90m[DEBUG][39m[0m:   	config.status: creating include/ffi.h
+[1m[90m[DEBUG][39m[0m:   	config.status: creating Makefile
+[1m[90m[DEBUG][39m[0m:   	config.status: creating testsuite/Makefile
+[1m[90m[DEBUG][39m[0m:   	config.status: creating man/Makefile
+[1m[90m[DEBUG][39m[0m:   	config.status: creating doc/Makefile
+[1m[90m[DEBUG][39m[0m:   	config.status: creating libffi.pc
+[1m[90m[DEBUG][39m[0m:   	config.status: creating fficonfig.h
+[1m[90m[DEBUG][39m[0m:   	config.status: executing buildir commands
+[1m[90m[DEBUG][39m[0m:   	config.status: skipping top_srcdir/Makefile - not created
+[1m[90m[DEBUG][39m[0m:   	config.status: executing depfiles commands
+[1m[90m[DEBUG][39m[0m:   	config.status: executing libtool commands
+[1m[90m[DEBUG][39m[0m:   	config.status: executing include commands
+[1m[90m[DEBUG][39m[0m:   	config.status: executing src commands
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running make -j 8 libffi.la[0m
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -DAARCH64 -DGENERATE_LIBFFI_MAP \
+[1m[90m[DEBUG][39m[0m:   	 -E -x assembler-with-cpp -o libffi.map ./libffi.map.in
+[1m[90m[DEBUG][39m[0m:   	depbase=`echo src/aarch64/ffi.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh ./libtool  --tag=CC   --mode=compile /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/aarch64/ffi.lo -MD -MP -MF $depbase.Tpo -c -o src/aarch64/ffi.lo src/aarch64/ffi.c &&\
+[1m[90m[DEBUG][39m[0m:   	mv -f $depbase.Tpo $depbase.Plo
+[1m[90m[DEBUG][39m[0m:   	depbase=`echo src/aarch64/sysv.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh ./libtool  --tag=CC   --mode=compile /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -I. -I./include -Iinclude -I./src -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -MT src/aarch64/sysv.lo -MD -MP -MF $depbase.Tpo -c -o src/aarch64/sysv.lo src/aarch64/sysv.S &&\
+[1m[90m[DEBUG][39m[0m:   	mv -f $depbase.Tpo $depbase.Plo
+[1m[90m[DEBUG][39m[0m:   	depbase=`echo src/prep_cif.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh ./libtool  --tag=CC   --mode=compile /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/prep_cif.lo -MD -MP -MF $depbase.Tpo -c -o src/prep_cif.lo src/prep_cif.c &&\
+[1m[90m[DEBUG][39m[0m:   	mv -f $depbase.Tpo $depbase.Plo
+[1m[90m[DEBUG][39m[0m:   	depbase=`echo src/types.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh ./libtool  --tag=CC   --mode=compile /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/types.lo -MD -MP -MF $depbase.Tpo -c -o src/types.lo src/types.c &&\
+[1m[90m[DEBUG][39m[0m:   	mv -f $depbase.Tpo $depbase.Plo
+[1m[90m[DEBUG][39m[0m:   	depbase=`echo src/raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh ./libtool  --tag=CC   --mode=compile /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/raw_api.lo src/raw_api.c &&\
+[1m[90m[DEBUG][39m[0m:   	mv -f $depbase.Tpo $depbase.Plo
+[1m[90m[DEBUG][39m[0m:   	depbase=`echo src/java_raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh ./libtool  --tag=CC   --mode=compile /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/java_raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/java_raw_api.lo src/java_raw_api.c &&\
+[1m[90m[DEBUG][39m[0m:   	mv -f $depbase.Tpo $depbase.Plo
+[1m[90m[DEBUG][39m[0m:   	depbase=`echo src/closures.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh ./libtool  --tag=CC   --mode=compile /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/closures.lo -MD -MP -MF $depbase.Tpo -c -o src/closures.lo src/closures.c &&\
+[1m[90m[DEBUG][39m[0m:   	mv -f $depbase.Tpo $depbase.Plo
+[1m[90m[DEBUG][39m[0m:   	depbase=`echo src/tramp.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh ./libtool  --tag=CC   --mode=compile /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I.  -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/tramp.lo -MD -MP -MF $depbase.Tpo -c -o src/tramp.lo src/tramp.c &&\
+[1m[90m[DEBUG][39m[0m:   	mv -f $depbase.Tpo $depbase.Plo
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/prep_cif.lo -MD -MP -MF src/.deps/prep_cif.Tpo -c src/prep_cif.c  -fPIC -DPIC -o src/.libs/prep_cif.o
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/raw_api.lo -MD -MP -MF src/.deps/raw_api.Tpo -c src/raw_api.c  -fPIC -DPIC -o src/.libs/raw_api.o
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/java_raw_api.lo -MD -MP -MF src/.deps/java_raw_api.Tpo -c src/java_raw_api.c  -fPIC -DPIC -o src/.libs/java_raw_api.o
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/closures.lo -MD -MP -MF src/.deps/closures.Tpo -c src/closures.c  -fPIC -DPIC -o src/.libs/closures.o
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/aarch64/ffi.lo -MD -MP -MF src/aarch64/.deps/ffi.Tpo -c src/aarch64/ffi.c  -fPIC -DPIC -o src/aarch64/.libs/ffi.o
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -I. -I./include -Iinclude -I./src -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -MT src/aarch64/sysv.lo -MD -MP -MF src/aarch64/.deps/sysv.Tpo -c src/aarch64/sysv.S  -fPIC -DPIC -o src/aarch64/.libs/sysv.o
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/types.lo -MD -MP -MF src/.deps/types.Tpo -c src/types.c  -fPIC -DPIC -o src/.libs/types.o
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/tramp.lo -MD -MP -MF src/.deps/tramp.Tpo -c src/tramp.c  -fPIC -DPIC -o src/.libs/tramp.o
+[1m[90m[DEBUG][39m[0m:   	src/java_raw_api.c:328:46: warning: 'ffi_java_raw_size' is deprecated
+[1m[90m[DEBUG][39m[0m:   	      [-Wdeprecated-declarations]
+[1m[90m[DEBUG][39m[0m:   	  328 |   ffi_java_raw *raw = (ffi_java_raw*)alloca (ffi_java_raw_size (cif));
+[1m[90m[DEBUG][39m[0m:   	      |                                              ^
+[1m[90m[DEBUG][39m[0m:   	./include/ffi.h:301:56: note: 'ffi_java_raw_size' has been explicitly marked
+[1m[90m[DEBUG][39m[0m:   	      deprecated here
+[1m[90m[DEBUG][39m[0m:   	  301 | size_t ffi_java_raw_size (ffi_cif *cif) __attribute__((deprecated));
+[1m[90m[DEBUG][39m[0m:   	      |                                                        ^
+[1m[90m[DEBUG][39m[0m:   	src/java_raw_api.c:331:3: warning: 'ffi_java_ptrarray_to_raw' is deprecated
+[1m[90m[DEBUG][39m[0m:   	      [-Wdeprecated-declarations]
+[1m[90m[DEBUG][39m[0m:   	  331 |   ffi_java_ptrarray_to_raw (cif, avalue, raw);
+[1m[90m[DEBUG][39m[0m:   	      |   ^
+[1m[90m[DEBUG][39m[0m:   	./include/ffi.h:297:93: note: 'ffi_java_ptrarray_to_raw' has been explicitly
+[1m[90m[DEBUG][39m[0m:   	      marked deprecated here
+[1m[90m[DEBUG][39m[0m:   	  297 |   ...(ffi_cif *cif, void **args, ffi_java_raw *raw) __attribute__((deprecated));
+[1m[90m[DEBUG][39m[0m:   	      |                                                                    ^
+[1m[90m[DEBUG][39m[0m:   	2 warnings generated.
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/prep_cif.lo -MD -MP -MF src/.deps/prep_cif.Tpo -c src/prep_cif.c -o src/prep_cif.o >/dev/null 2>&1
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/raw_api.lo -MD -MP -MF src/.deps/raw_api.Tpo -c src/raw_api.c -o src/raw_api.o >/dev/null 2>&1
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/java_raw_api.lo -MD -MP -MF src/.deps/java_raw_api.Tpo -c src/java_raw_api.c -o src/java_raw_api.o >/dev/null 2>&1
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/types.lo -MD -MP -MF src/.deps/types.Tpo -c src/types.c -o src/types.o >/dev/null 2>&1
+[1m[90m[DEBUG][39m[0m:   	In file included from src/closures.c:544:
+[1m[90m[DEBUG][39m[0m:   	src/dlmalloc.c:3385:7: warning: variable 'nfences' set but not used
+[1m[90m[DEBUG][39m[0m:   	      [-Wunused-but-set-variable]
+[1m[90m[DEBUG][39m[0m:   	 3385 |   int nfences = 0;
+[1m[90m[DEBUG][39m[0m:   	      |       ^
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/tramp.lo -MD -MP -MF src/.deps/tramp.Tpo -c src/tramp.c -o src/tramp.o >/dev/null 2>&1
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/aarch64/ffi.lo -MD -MP -MF src/aarch64/.deps/ffi.Tpo -c src/aarch64/ffi.c -o src/aarch64/ffi.o >/dev/null 2>&1
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -I. -I./include -Iinclude -I./src -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -MT src/aarch64/sysv.lo -MD -MP -MF src/aarch64/.deps/sysv.Tpo -c src/aarch64/sysv.S -o src/aarch64/sysv.o >/dev/null 2>&1
+[1m[90m[DEBUG][39m[0m:   	1 warning generated.
+[1m[90m[DEBUG][39m[0m:   	libtool: compile:  /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -DHAVE_CONFIG_H -I. -I. -I./include -Iinclude -I./src -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -MT src/closures.lo -MD -MP -MF src/.deps/closures.Tpo -c src/closures.c -o src/closures.o >/dev/null 2>&1
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh ./libtool  --tag=CC   --mode=link /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23  -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -no-undefined -avoid-version  '-L/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a'  -L/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a -o libffi.la -rpath /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_24/libffi/lib src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo  src/aarch64/ffi.lo src/aarch64/sysv.lo
+[1m[90m[DEBUG][39m[0m:   	libtool: link: /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23 -shared  -fPIC -DPIC  src/.libs/prep_cif.o src/.libs/types.o src/.libs/raw_api.o src/.libs/java_raw_api.o src/.libs/closures.o src/.libs/tramp.o src/aarch64/.libs/ffi.o src/aarch64/.libs/sysv.o   -L/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a  -march=armv8-a -march=armv8-a -Wall   -Wl,-soname -Wl,libffi.so -o .libs/libffi.so
+[1m[90m[DEBUG][39m[0m:   	libtool: link: /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/llvm-ar cr .libs/libffi.a src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/aarch64/ffi.o src/aarch64/sysv.o
+[1m[90m[DEBUG][39m[0m:   	libtool: link: /data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/llvm-ranlib .libs/libffi.a
+[1m[90m[DEBUG][39m[0m:   	libtool: link: ( cd ".libs" && rm -f "libffi.la" && ln -s "../libffi.la" "libffi.la" )
+[1m[INFO][0m:    [36m<- directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running cp /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_24/libffi/.libs/libffi.so /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a[0m
+[1m[INFO][0m:    [1m[32mBuilding openssl for arm64-v8a[0m[39m
+[1m[INFO][0m:    [36m-> directory context /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3[39m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running perl Configure shared no-dso no-asm no-tests android-arm64 -D__ANDROID_API__=24[0m
+[1m[90m[DEBUG][39m[0m:   	Configuring OpenSSL version 3.3.1 for target android-arm64
+[1m[90m[DEBUG][39m[0m:   	Using os-specific seed configuration
+[1m[90m[DEBUG][39m[0m:   	Created configdata.pm
+[1m[90m[DEBUG][39m[0m:   	Running configdata.pm
+[1m[90m[DEBUG][39m[0m:   	Created Makefile.in
+[1m[90m[DEBUG][39m[0m:   	Created Makefile
+[1m[90m[DEBUG][39m[0m:   	
+[1m[90m[DEBUG][39m[0m:   	**********************************************************************
+[1m[90m[DEBUG][39m[0m:   	***                                                                ***
+[1m[90m[DEBUG][39m[0m:   	***   OpenSSL has been successfully configured                     ***
+[1m[90m[DEBUG][39m[0m:   	***                                                                ***
+[1m[90m[DEBUG][39m[0m:   	***   If you encounter a problem while building, please open an    ***
+[1m[90m[DEBUG][39m[0m:   	***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
+[1m[90m[DEBUG][39m[0m:   	***   and include the output from the following command:           ***
+[1m[90m[DEBUG][39m[0m:   	***                                                                ***
+[1m[90m[DEBUG][39m[0m:   	***       perl configdata.pm --dump                                ***
+[1m[90m[DEBUG][39m[0m:   	***                                                                ***
+[1m[90m[DEBUG][39m[0m:   	***   (If you are new to OpenSSL, you might want to consult the    ***
+[1m[90m[DEBUG][39m[0m:   	***   'Troubleshooting' section in the INSTALL.md file first)      ***
+[1m[90m[DEBUG][39m[0m:   	***                                                                ***
+[1m[90m[DEBUG][39m[0m:   	**********************************************************************
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running make -j 8[0m
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfig.cmake.in > OpenSSLConfig.cmake
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Iutil/perl" "-Mconfigdata" "-MOpenSSL::paramnames" "util/dofile.pl" "-oMakefile" crypto/params_idx.c.in > crypto/params_idx.c
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfig.cmake.in > exporters/OpenSSLConfig.cmake
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libcrypto.pc.in > exporters/libcrypto.pc
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libssl.pc.in > exporters/libssl.pc
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/crypto/bn_conf.h.in > include/crypto/bn_conf.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/crypto/dso_conf.h.in > include/crypto/dso_conf.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Iutil/perl" "-Mconfigdata" "-MOpenSSL::paramnames" "util/dofile.pl" "-oMakefile" include/internal/param_names.h.in > include/internal/param_names.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/asn1.h.in > include/openssl/asn1.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/asn1t.h.in > include/openssl/asn1t.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/bio.h.in > include/openssl/bio.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/cmp.h.in > include/openssl/cmp.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/cms.h.in > include/openssl/cms.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/conf.h.in > include/openssl/conf.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Iutil/perl" "-Mconfigdata" "-MOpenSSL::paramnames" "util/dofile.pl" "-oMakefile" include/openssl/core_names.h.in > include/openssl/core_names.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/crmf.h.in > include/openssl/crmf.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/crypto.h.in > include/openssl/crypto.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ct.h.in > include/openssl/ct.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/err.h.in > include/openssl/err.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ess.h.in > include/openssl/ess.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/fipskey.h.in > include/openssl/fipskey.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/lhash.h.in > include/openssl/lhash.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ocsp.h.in > include/openssl/ocsp.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/opensslv.h.in > include/openssl/opensslv.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/pkcs12.h.in > include/openssl/pkcs12.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/pkcs7.h.in > include/openssl/pkcs7.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/safestack.h.in > include/openssl/safestack.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/srp.h.in > include/openssl/srp.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ssl.h.in > include/openssl/ssl.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ui.h.in > include/openssl/ui.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/x509.h.in > include/openssl/x509.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/x509_vfy.h.in > include/openssl/x509_vfy.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/x509v3.h.in > include/openssl/x509v3.h
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libcrypto.pc.in > libcrypto.pc
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libssl.pc.in > libssl.pc
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfigVersion.cmake.in > OpenSSLConfigVersion.cmake
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfigVersion.cmake.in > exporters/OpenSSLConfigVersion.cmake
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mconfigdata" "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/openssl.pc.in > exporters/openssl.pc
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "-Mbuilddata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/openssl.pc.in > openssl.pc
+[1m[90m[DEBUG][39m[0m:   	"make" depend && "make" _build_sw
+[1m[90m[DEBUG][39m[0m:   	make[1]: Entering directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+[1m[90m[DEBUG][39m[0m:   	make[1]: Leaving directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+[1m[90m[DEBUG][39m[0m:   	make[1]: Entering directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+[1m[90m[DEBUG][39m[0m:   	aarch64-linux-android24-clang  -I. -Iinclude -Iapps/include  -fPIC -pthread -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSLDIR="\"/usr/local/ssl\"" -DENGINESDIR="\"/usr/local/lib/engines-3\"" -DMODULESDIR="\"/usr/local/lib/ossl-modules\"" -DOPENSSL_BUILDING_OPENSSL -DNDEBUG -D__ANDROID_API__=24 -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -c -o apps/lib/libapps-lib-app_libctx.o apps/lib/app_libctx.c
+[1m[90m[DEBUG][39m[0m:   	aarch64-linux-android24-clang  -I. -Iinclude -Iapps/include  -fPIC -pthread -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSLDIR="\"/usr/local/ssl\"" -DENGINESDIR="\"/usr/local/lib/engines-3\"" -DMODULESDIR="\"/usr/local/lib/ossl-modules\"" -DOPENSSL_BUILDING_OPENSSL -DNDEBUG -D__ANDROID_API__=24 -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -c -o apps/lib/libapps-lib-app_params.o apps/lib/app_params.c
+[1m[90m[DEBUG][39m[0m:   	aarch64-linux-android24-clang  -I. -Iinclude -Iapps/include  -fPIC -pthread -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSLDIR="\"/usr/local/ssl\"" -DENGINESDIR="\"/usr/local/lib/engines-3\"" -DMODULESDIR="\"/usr/local/lib/ossl-modules\"" -DOPENSSL_BUILDING_OPENSSL -DNDEBUG -D__ANDROID_API__=24 -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -c -o apps/lib/libapps-lib-app_provider.o apps/lib/app_provider.c
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh: 1: aarch64-linux-android24-clang: not found
+[1m[90m[DEBUG][39m[0m:   	make[1]: *** [Makefile:3055: apps/lib/libapps-lib-app_libctx.o] Error 127
+[1m[90m[DEBUG][39m[0m:   	make[1]: *** Waiting for unfinished jobs....
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh: 1: aarch64-linux-android24-clang: not found
+[1m[90m[DEBUG][39m[0m:   	make[1]: *** [Makefile:3057: apps/lib/libapps-lib-app_params.o] Error 127
+[1m[90m[DEBUG][39m[0m:   	/data/data/com.termux/files/usr/bin/sh: 1: aarch64-linux-android24-clang: not found
+[1m[90m[DEBUG][39m[0m:   	make[1]: *** [Makefile:3059: apps/lib/libapps-lib-app_provider.o] Error 127
+[1m[90m[DEBUG][39m[0m:   	make[1]: Leaving directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+[1m[90m[DEBUG][39m[0m:   	make: *** [Makefile:1521: build_sw] Error 2
+Exception in thread background thread for pid 4893:
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/sh/__init__.py", line 1709, in wrap
+    fn(*rgs, **kwargs)
+    ~~^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/sh/__init__.py", line 2720, in background_thread
+    handle_exit_code(exit_code)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/sh/__init__.py", line 2411, in fn
+    return self.command.handle_command_exit_code(exit_code)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/sh/__init__.py", line 820, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_2: 
+
+  RAN: /data/data/com.termux/files/usr/bin/make -j 8
+
+  STDOUT:
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfig.cmake.in > OpenSSLConfig.cmake
+/data/data/com.termux/files/usr/bin/perl "-I." "-Iutil/perl" "-Mconfigdata" "-MOpenSSL::paramnames" "util/dofile.pl" "-oMakefile" crypto/params_idx.c.in > crypto/params_idx.c
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfig.cmake.in > exporters/OpenSSLConfig.cmake
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libcrypto.pc.in > exporters/libcrypto.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libssl.pc.in > exporters/libssl.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/crypto/bn_conf.h.in > include/crypto/bn_conf.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/crypto/dso_conf.h.in > include/crypto/dso_conf.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Iutil/perl" "-Mconfigdata" "-MOpenSSL::paramnames" "util/dofile.pl" "-oMakefile" include/internal/param_names.h.in > include/internal/param_names.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/asn1.h.in > include/openssl/asn1.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/asn1t.h.in > include/openssl/asn1t.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/bio.h.in > include/openssl/bio.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/cmp.h.in > include/openssl/cmp.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/cms.h.in > include/openssl/cms.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/conf.h.in > include/openssl/conf.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Iutil/perl" "-Mconfigdata" "-MOpenSSL::paramnames" "util/dofile.pl" "-oMakefile" include/openssl/core_names.h.in > include/openssl/core_names.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/crmf.h.in > include/openssl/crmf.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/crypto.h.in > include/openssl/crypto.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ct.h.in > include/openssl/ct.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/err.h.in > include/openssl/err.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ess.h.in > include/openssl/ess.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/fipskey.h.in > include/openssl/fipskey.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/lhash.h.in > include/openssl/lhash.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ocsp.h.in > include/openssl/ocsp.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/opensslv.h.in > include/openssl/opensslv.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/pkcs12.h.in > include/openssl/pkcs12.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/pkcs7.h.in > include/openssl/pkcs7.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/safestack.h.in > include/openssl/safestack.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/srp.h.in > include/openssl/srp.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ssl.h.in > include/openssl/ssl.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ui.h.in > include/openssl/ui.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/x509.h.in > include/openssl/x509.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/x509_vfy.h.in > include/openssl/x509_vfy.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/x509v3.h.in > include/openssl/x509v3.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libcrypto.pc.in > libcrypto.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libssl.pc.in > libssl.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfigVersion.cmake.in > OpenSSLConfigVersion.cmake
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfigVersion.cmake.in > exporters/OpenSSLConfigVersion.cmake
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mconfigdata" "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/openssl.pc.in > exporters/openssl.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "-Mbuilddata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/openssl.pc.in > openssl.pc
+"make" depend && "make" _build_sw
+make[1]: Entering directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+make[1]: Leaving directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+make[1]: Entering directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+aarch64-linux-android24-clang  -I. -Iinclude -Iapps/include  -fPIC -pthread -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSLDIR="\"/usr/local/ssl\"" -DENGINESDIR="\"/usr/local/lib/engines-3\"" -DMODULESDIR="\"/usr/local/lib/ossl-modules\"" -DOPENSSL_BUILDING_OPENSSL -DNDEBUG -D__ANDROID_API__=24 -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -c -o apps/lib/libapps-lib-app_libctx.o apps/lib/app_libctx.c
+aarch64-linux-android24-clang  -I. -Iinclude -Iapps/include  -fPIC -pthread -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSLDIR="\"/usr/local/ssl\"" -DENGINESDIR="\"/usr/local/lib/engines-3\"" -DMODULESDIR="\"/usr/local/lib/ossl-modules\"" -DOPENSSL_BUILDING_OPENSSL -DNDEBUG -D__ANDROID_API__=24 -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -c -o apps/lib/libapps-lib-app_params.o apps/lib/app_params.c
+aarch64-linux-android24-clang  -I. -Iinclude -Iapps/include  -fPIC -pthread -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSLDIR="\"/usr/local/ssl\"" -DENGINESDIR="\"/usr/local/lib/engines-3\"" -DMODULESDIR="\"/usr/local/lib/ossl-modules\"" -DOPENSSL_BUILDING_OPENSSL -DNDEBUG -D__ANDROID_API__=24 -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -c -o apps/lib/libapps-lib-app_provider.o apps/lib/app_provider.c
+/data/data/com.termux/files/usr/bin/sh: 1: aarch64-linux-android24-clang: not found
+make[1]: *** [Makefile:3055: apps/lib/libapps-lib-app_libctx.o] Error 127
+make[1]: *** Waiting for unfinished jobs....
+/data/data/com.termux/files/usr/bin/sh: 1: aarch64-linux-android24-clang: not found
+make[1]: *** [Makefile:3057: apps/lib/libapps-lib-app_params.o] Error 127
+/data/data/com.termux/files/usr/bin/sh: 1: aarch64-linux-android24-clang: not found
+make[1]: *** [Makefile:3059: apps/lib/libapps-lib-app_provider.o] Error 127
+make[1]: Leaving directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+make: *** [Makefile:1521: build_sw] Error 2
+
+
+  STDERR:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 1290, in <module>
+    main()
+    ~~~~^^
+  File "/data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/entrypoints.py", line 18, in main
+    ToolchainCL()
+    ~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 721, in __init__
+    getattr(self, command)(args)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 104, in wrapper_func
+    build_dist_from_args(ctx, dist, args)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 163, in build_dist_from_args
+    build_recipes(build_order, python_modules, ctx,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  getattr(args, "private", None),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                  ),
+                  ^^
+                 )
+                 ^
+  File "/data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/build.py", line 530, in build_recipes
+    recipe.build_arch(arch)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/recipes/openssl/__init__.py", line 124, in build_arch
+    shprint(sh.make, '-j', str(cpu_count()), _env=env)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/overlord/.buildozer/android/platform/python-for-android/pythonforandroid/logger.py", line 174, in shprint
+    for line in output:
+                ^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/sh/__init__.py", line 876, in __next__
+    self.wait()
+    ~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/sh/__init__.py", line 793, in wait
+    self.handle_command_exit_code(exit_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/sh/__init__.py", line 820, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_2: 
+
+  RAN: /data/data/com.termux/files/usr/bin/make -j 8
+
+  STDOUT:
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfig.cmake.in > OpenSSLConfig.cmake
+/data/data/com.termux/files/usr/bin/perl "-I." "-Iutil/perl" "-Mconfigdata" "-MOpenSSL::paramnames" "util/dofile.pl" "-oMakefile" crypto/params_idx.c.in > crypto/params_idx.c
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfig.cmake.in > exporters/OpenSSLConfig.cmake
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libcrypto.pc.in > exporters/libcrypto.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libssl.pc.in > exporters/libssl.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/crypto/bn_conf.h.in > include/crypto/bn_conf.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/crypto/dso_conf.h.in > include/crypto/dso_conf.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Iutil/perl" "-Mconfigdata" "-MOpenSSL::paramnames" "util/dofile.pl" "-oMakefile" include/internal/param_names.h.in > include/internal/param_names.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/asn1.h.in > include/openssl/asn1.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/asn1t.h.in > include/openssl/asn1t.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/bio.h.in > include/openssl/bio.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/cmp.h.in > include/openssl/cmp.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/cms.h.in > include/openssl/cms.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/conf.h.in > include/openssl/conf.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Iutil/perl" "-Mconfigdata" "-MOpenSSL::paramnames" "util/dofile.pl" "-oMakefile" include/openssl/core_names.h.in > include/openssl/core_names.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/crmf.h.in > include/openssl/crmf.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/crypto.h.in > include/openssl/crypto.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ct.h.in > include/openssl/ct.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/err.h.in > include/openssl/err.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ess.h.in > include/openssl/ess.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/fipskey.h.in > include/openssl/fipskey.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/lhash.h.in > include/openssl/lhash.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ocsp.h.in > include/openssl/ocsp.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/opensslv.h.in > include/openssl/opensslv.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/pkcs12.h.in > include/openssl/pkcs12.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/pkcs7.h.in > include/openssl/pkcs7.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/safestack.h.in > include/openssl/safestack.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/srp.h.in > include/openssl/srp.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ssl.h.in > include/openssl/ssl.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/ui.h.in > include/openssl/ui.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/x509.h.in > include/openssl/x509.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/x509_vfy.h.in > include/openssl/x509_vfy.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "util/dofile.pl" "-oMakefile" include/openssl/x509v3.h.in > include/openssl/x509v3.h
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libcrypto.pc.in > libcrypto.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/libssl.pc.in > libssl.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mconfigdata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfigVersion.cmake.in > OpenSSLConfigVersion.cmake
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/cmake/OpenSSLConfigVersion.cmake.in > exporters/OpenSSLConfigVersion.cmake
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mconfigdata" "-Mconfigdata" "-Minstalldata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/openssl.pc.in > exporters/openssl.pc
+/data/data/com.termux/files/usr/bin/perl "-I." "-Mconfigdata" "-Mbuilddata" "-Mbuilddata" "-Mbuilddata" "util/dofile.pl" "-oMakefile" exporters/pkg-config/openssl.pc.in > openssl.pc
+"make" depend && "make" _build_sw
+make[1]: Entering directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+make[1]: Leaving directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+make[1]: Entering directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+aarch64-linux-android24-clang  -I. -Iinclude -Iapps/include  -fPIC -pthread -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSLDIR="\"/usr/local/ssl\"" -DENGINESDIR="\"/usr/local/lib/engines-3\"" -DMODULESDIR="\"/usr/local/lib/ossl-modules\"" -DOPENSSL_BUILDING_OPENSSL -DNDEBUG -D__ANDROID_API__=24 -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -c -o apps/lib/libapps-lib-app_libctx.o apps/lib/app_libctx.c
+aarch64-linux-android24-clang  -I. -Iinclude -Iapps/include  -fPIC -pthread -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSLDIR="\"/usr/local/ssl\"" -DENGINESDIR="\"/usr/local/lib/engines-3\"" -DMODULESDIR="\"/usr/local/lib/ossl-modules\"" -DOPENSSL_BUILDING_OPENSSL -DNDEBUG -D__ANDROID_API__=24 -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -c -o apps/lib/libapps-lib-app_params.o apps/lib/app_params.c
+aarch64-linux-android24-clang  -I. -Iinclude -Iapps/include  -fPIC -pthread -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -Wno-macro-redefined -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSLDIR="\"/usr/local/ssl\"" -DENGINESDIR="\"/usr/local/lib/engines-3\"" -DMODULESDIR="\"/usr/local/lib/ossl-modules\"" -DOPENSSL_BUILDING_OPENSSL -DNDEBUG -D__ANDROID_API__=24 -DANDROID -I/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/sysroot/usr/include -I/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14  -c -o apps/lib/libapps-lib-app_provider.o apps/lib/app_provider.c
+/data/data/com.termux/files/usr/bin/sh: 1: aarch64-linux-android24-clang: not found
+make[1]: *** [Makefile:3055: apps/lib/libapps-lib-app_libctx.o] Error 127
+make[1]: *** Waiting for unfinished jobs....
+/data/data/com.termux/files/usr/bin/sh: 1: aarch64-linux-android24-clang: not found
+make[1]: *** [Makefile:3057: apps/lib/libapps-lib-app_params.o] Error 127
+/data/data/com.termux/files/usr/bin/sh: 1: aarch64-linux-android24-clang: not found
+make[1]: *** [Makefile:3059: apps/lib/libapps-lib-app_provider.o] Error 127
+make[1]: Leaving directory '/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_24/openssl3'
+make: *** [Makefile:1521: build_sw] Error 2
+
+
+  STDERR:
+
+# Command failed: ('/data/data/com.termux/files/usr/bin/python3.14', '-m', 'pythonforandroid.toolchain', 'create', '--dist_name=myapp', '--bootstrap=sdl2', '--requirements=python3,kivy', '--arch=arm64-v8a', '--arch=armeabi-v7a', '--copy-libs', '--color=always', '--storage-dir=/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a', '--ndk-api=24', '--ignore-setup-py', '--debug')
+# Error code: 1
+# ENVIRONMENT:
+#     SHELL = '/data/data/com.termux/files/usr/bin/bash'
+#     COLORTERM = 'truecolor'
+#     HISTCONTROL = 'ignoreboth'
+#     PREFIX = '/data/data/com.termux/files/usr'
+#     JAVA_HOME = '/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk/'
+#     SHELL_CMD__RUNNER_NAME = 'terminal-session'
+#     TERMUX_APP__PACKAGE_NAME = 'com.termux'
+#     TERMUX_APP__IS_INSTALLED_ON_EXTERNAL_STORAGE = 'false'
+#     PWD = '/data/data/com.termux/files/home/overlord'
+#     TERMUX__HOME = '/data/data/com.termux/files/home'
+#     TERMUX_VERSION = '0.119.0-beta.3'
+#     TERMUX_APP__SE_INFO = 'default:targetSdkVersion=28:complete'
+#     TERMUX__ROOTFS_DIR = '/data/data/com.termux/files'
+#     SYSTEMSERVERCLASSPATH = '/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system_ext/framework/unisoc-services.jar:/system_ext/framework/unipnp-services.jar:/system_ext/framework/unipnp-features.jar:/system_ext/framework/ultra-services.jar:/apex/com.android.adservices/javalib/service-adservices.jar:/apex/com.android.adservices/javalib/service-sdksandbox.jar:/apex/com.android.appsearch/javalib/service-appsearch.jar:/apex/com.android.art/javalib/service-art.jar:/apex/com.android.compos/javalib/service-compos.jar:/apex/com.android.configinfrastructure/javalib/service-configinfrastructure.jar:/apex/com.android.healthfitness/javalib/service-healthfitness.jar:/apex/com.android.media/javalib/service-media-s.jar:/apex/com.android.ondevicepersonalization/javalib/service-ondevicepersonalization.jar:/apex/com.android.permission/javalib/service-permission.jar:/apex/com.android.rkpd/javalib/service-rkp.jar:/apex/com.android.virt/javalib/service-virtualization.jar'
+#     EXTERNAL_STORAGE = '/storage/self/primary'
+#     LD_PRELOAD = '/data/data/com.termux/files/usr/lib/libtermux-exec-ld-preload.so'
+#     HOME = '/data/data/com.termux/files/home'
+#     LANG = 'en_US.UTF-8'
+#     TERMUX_APP__PID = '21589'
+#     TERMUX_APP__APP_VERSION_NAME = '0.119.0-beta.3'
+#     DEX2OATBOOTCLASSPATH = '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/framework-location.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/radio_interactor_common.jar:/system/framework/unisoc_ims_common.jar:/system/framework/miframework.jar:/system/framework/subsys-framework.jar:/system/framework/vendor-telephony-framework.jar:/system/framework/ToolsManager-aidl.jar:/system_ext/framework/unisoc-framework.jar:/system_ext/framework/unipnp-framework.jar:/system_ext/framework/ultra-framework.jar:/apex/com.android.i18n/javalib/core-icu4j.jar'
+#     TMPDIR = '/data/data/com.termux/files/usr/tmp'
+#     ANDROID_DATA = '/data'
+#     TERMUX__APPS_DIR = '/data/user/0/com.termux/termux/apps'
+#     SHELL_CMD__SHELL_ID = '1'
+#     TERMUX__PREFIX = '/data/data/com.termux/files/usr'
+#     TERMUX_APP__SE_FILE_CONTEXT = 'u:object_r:app_data_file:s0:c244,c257,c512,c768'
+#     ANDROID_STORAGE = '/storage'
+#     TERM = 'xterm-256color'
+#     TERMUX_APP__IS_DEBUGGABLE_BUILD = 'false'
+#     TERMUX_APP__APP_VERSION_CODE = '1022'
+#     ASEC_MOUNTPOINT = '/mnt/asec'
+#     TERMUX_APP__LEGACY_DATA_DIR = '/data/data/com.termux'
+#     TEMP = '/data/data/com.termux/files/usr/tmp'
+#     ANDROID_I18N_ROOT = '/apex/com.android.i18n'
+#     SHLVL = '1'
+#     SHELL_CMD__APP_TERMINAL_SESSION_NUMBER_SINCE_APP_START = '0'
+#     ANDROID__BUILD_VERSION_SDK = '35'
+#     ANDROID_ROOT = '/system'
+#     BOOTCLASSPATH = '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/framework-location.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/radio_interactor_common.jar:/system/framework/unisoc_ims_common.jar:/system/framework/miframework.jar:/system/framework/subsys-framework.jar:/system/framework/vendor-telephony-framework.jar:/system/framework/ToolsManager-aidl.jar:/system_ext/framework/unisoc-framework.jar:/system_ext/framework/unipnp-framework.jar:/system_ext/framework/ultra-framework.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/apex/com.android.adservices/javalib/framework-adservices.jar:/apex/com.android.adservices/javalib/framework-sdksandbox.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.btservices/javalib/framework-bluetooth.jar:/apex/com.android.configinfrastructure/javalib/framework-configinfrastructure.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.devicelock/javalib/framework-devicelock.jar:/apex/com.android.healthfitness/javalib/framework-healthfitness.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.mediaprovider/javalib/framework-pdf.jar:/apex/com.android.mediaprovider/javalib/framework-pdf-v.jar:/apex/com.android.mediaprovider/javalib/framework-photopicker.jar:/apex/com.android.nfcservices/javalib/framework-nfc.jar:/apex/com.android.ondevicepersonalization/javalib/framework-ondevicepersonalization.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.profiling/javalib/framework-profiling.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-connectivity-t.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.uwb/javalib/framework-uwb.jar:/apex/com.android.virt/javalib/framework-virtualization.jar:/apex/com.android.wifi/javalib/framework-wifi.jar'
+#     TERMUX_APP__APK_RELEASE = 'F_DROID'
+#     ANDROID_TZDATA_ROOT = '/apex/com.android.tzdata'
+#     TERMUX__SE_PROCESS_CONTEXT = 'u:r:untrusted_app_27:s0:c244,c257,c512,c768'
+#     SHELL_CMD__PACKAGE_NAME = 'com.termux'
+#     TMP = '/data/data/com.termux/files/usr/tmp'
+#     PATH = '/data/data/com.termux/files/usr/bin'
+#     TERMUX_APP__DATA_DIR = '/data/user/0/com.termux'
+#     ANDROID_ART_ROOT = '/apex/com.android.art'
+#     TERMUX_APP__TARGET_SDK = '28'
+#     TERMUX__UID = '10500'
+#     TERMUX_APP__APK_FILE = '/data/app/~~6ZdMYAZ-gzKlTDTz2Mj0Sw==/com.termux-PdO_bX4eiSOqlDF71pqBFQ==/base.apk'
+#     TERMUX__USER_ID = '0'
+#     ANDROID_ASSETS = '/system/app'
+#     OLDPWD = '/data/data/com.termux/files/home/overlord'
+#     SHELL_CMD__APP_TERMINAL_SESSION_NUMBER_SINCE_BOOT = '1'
+#     _ = '/data/data/com.termux/files/usr/bin/buildozer'
+#     PACKAGES_PATH = '/data/data/com.termux/files/home/.buildozer/android/packages'
+#     ANDROIDSDK = '/data/data/com.termux/files/home/.buildozer/android/platform/android-sdk'
+#     ANDROIDNDK = '/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c'
+#     ANDROIDAPI = '33'
+#     ANDROIDMINAPI = '24'
+# 
+# Buildozer failed to execute the last command
+# The error might be hidden in the log above this error
+# Please read the full log, and search for it before
+# raising an issue with buildozer itself.
+# In case of a bug report, please add a full log with log_level = 2

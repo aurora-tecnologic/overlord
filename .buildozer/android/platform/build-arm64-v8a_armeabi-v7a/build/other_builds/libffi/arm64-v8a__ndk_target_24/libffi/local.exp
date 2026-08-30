@@ -1,0 +1,3 @@
+set CC_FOR_TARGET "/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -std=gnu23"
+set CXX_FOR_TARGET "/data/data/com.termux/files/home/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/android-x86_64/bin/clang++ -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC"
+set compiler_vendor "clang"

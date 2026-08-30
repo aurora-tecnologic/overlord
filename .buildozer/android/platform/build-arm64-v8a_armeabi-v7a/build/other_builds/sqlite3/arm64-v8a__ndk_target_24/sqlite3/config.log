@@ -1,0 +1,2 @@
+Invoked as: /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_24/sqlite3/configure --disable-tcl --prefix=/data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_24/sqlite3 --host=aarch64-linux-android
+Tclsh: /data/data/com.termux/files/home/overlord/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_24/sqlite3/jimsh0
