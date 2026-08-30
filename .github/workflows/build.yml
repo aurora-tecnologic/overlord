@@ -32,10 +32,15 @@ jobs:
         pip install --upgrade pip
         pip install buildozer cython virtualenv
 
-    - name: Pre-clean Git blocks for Buildozer
+    - name: Fix SDL2_image dav1d submodule issue
       run: |
-        # Elimina cualquier rastro de git interno que cause conflictos en las recetas
-        find . -name ".git" -type d -exec rm -rf {} + || true
+        # Localiza la ruta de SDL2_image si ya existe en el caché y corrige el submódulo huérfano
+        SDLIMG=".buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image"
+        if [ -d "$SDLIMG" ]; then
+          echo "Limpiando submódulo corrupto dav1d..."
+          rm -rf "$SDLIMG/external/dav1d"
+          git -C "$SDLIMG" submodule deinit -f external/dav1d || true
+        fi
 
     - name: Build with Buildozer
       run: |
