@@ -34,7 +34,9 @@ jobs:
 
     - name: Build with Buildozer
       run: |
-        buildozer android debug
+        # Desactiva el chequeo estricto de git en submódulos internos para evitar el error 128
+        export P4A_DISABLE_GIT_CHECK=1
+        buildozer -v android debug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
